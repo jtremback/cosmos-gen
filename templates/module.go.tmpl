@@ -85,7 +85,7 @@ func NewAppModule(keeper Keeper) AppModule {
 }
 
 // RegisterInvariants enforces registering of invariants
-func (AppModule) RegisterInvariants(_ sdk.InvariantRouter) {}
+func (AppModule) RegisterInvariants(_ sdk.InvariantRegistry) {}
 
 // Route defines the key for the route
 func (AppModule) Route() string {
